@@ -1,0 +1,32 @@
+.tabs {
+  .tabs-header {
+    border-bottom: 2px solid $color-secondary;
+    margin: 1em -0.8em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .tabs-item {
+      color: $color-text;
+      font-family: $font-face-header;
+      font-weight: 300;
+      line-height: 2;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+      padding: 0 0.8em;
+      margin-bottom: -2px;
+
+      &:hover {
+        color: $color-highlight;
+        border-bottom-color: $color-highlight;
+      }
+
+      &.selected {
+        color: $color-primary;
+        border-bottom-color: $color-primary;
+        cursor: default;
+      }
+    }
+  }
+}

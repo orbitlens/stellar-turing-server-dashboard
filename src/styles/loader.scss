@@ -1,0 +1,24 @@
+.loader {
+  font-size: 10px;
+  margin: $space-block auto;
+  border: 0.6em solid transparentize($color-inversed, 0.8);
+  border-left-color: $color-inversed;
+  transform: translateZ(0);
+  animation: loader-animation 1.1s infinite linear;
+
+  &,
+  &:after {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+  }
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

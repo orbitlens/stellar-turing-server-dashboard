@@ -1,0 +1,28 @@
+//colors
+$color-bg: #fff;
+$color-inversed: #94abd1;
+$color-text: rgba(0, 0, 0, 0.87);
+$color-secondary: #9ea1a5;
+$color-primary: #4235c3;
+$color-highlight: #4233de;
+$color-modal-bg: rgba(0, 0, 0, .2);
+$color-selection: $color-inversed !default;
+$color-alert: #e55353;
+$color-success: #2eb85c;
+$color-warning: #f9b115;
+
+//fonts
+$font-face-primary: 'Segoe Ui', Roboto, 'Helvetica Neue', sans-serif;
+$font-face-header: -apple-system, BlinkMacSystemFont, 'Segoe Ui', Roboto, 'Helvetica Neue', sans-serif;
+$font-face-mono: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+$font-size-base: 1.6rem;
+$font-weight-base: 300;
+$font-line-height-base: 1.4285;
+
+//spacing
+$space-block: 1.6rem;
+$space-block-micro: 0.5*$space-block;
+
+//responsive breakpoints
+$responsive-mobile-browser-width: 992px;
