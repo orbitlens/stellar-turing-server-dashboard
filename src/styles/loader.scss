@@ -12,6 +12,10 @@
     width: 4em;
     height: 4em;
   }
+
+  &.micro {
+    font-size: 6px;
+  }
 }
 
 @keyframes loader-animation {

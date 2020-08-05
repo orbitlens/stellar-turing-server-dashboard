@@ -6,7 +6,7 @@ import Layout from './layout/layout-view'
 import NotFoundPageView from './content/not-found-page-view'
 import TurretSelectorView from './turret/turret-selector-view'
 import TurretDetailsView from './turret/turret-details-view'
-import CreateContactView from './contract/create-contract-view'
+import CreateContactView from './contract/create/create-contract-view'
 import TurretLayoutView from './turret/turret-layout-view'
 
 function AppRouter() {

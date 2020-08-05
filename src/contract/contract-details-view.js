@@ -2,9 +2,13 @@ import React from 'react'
 import {AccountExplorerLink} from '../components/explorer-link'
 
 export default function ContractDetailsView({contract, network}) {
-    const {contract: contractAddress, signer, fields} = contract
+    const {contract: contractAddress, authkey, signer, fields} = contract
     return <div className="segment">
         <h4>Contract <AccountExplorerLink address={contractAddress} network={network}/></h4>
+        <div className="micro-space">
+            <span className="dimmed">Auth key: </span>
+            <AccountExplorerLink address={authkey} network={network}/>
+        </div>
         <div>
             <span className="dimmed">Signer public key: </span>
             <AccountExplorerLink address={signer} network={network}/>

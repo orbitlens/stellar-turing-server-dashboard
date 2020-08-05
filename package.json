@@ -1,8 +1,13 @@
 {
   "name": "stellar-turing-server-dashboard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dashboard UI for Stellar turing signing servers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbitlens/stellar-turing-server-dashboard"
+  },
   "devDependencies": {
+    "@albedo-link/intent": "^0.8.5",
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.3",

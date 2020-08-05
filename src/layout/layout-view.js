@@ -1,5 +1,6 @@
 import React from 'react'
 import './layout.scss'
+import {repository} from '../../package.json'
 
 export default function LayoutView({children}) {
     return <>
@@ -8,8 +9,10 @@ export default function LayoutView({children}) {
             <hr/>
         </header>
         <div className="page-container container space">{children}</div>
-        <footer className="text-center dimmed">
-
+        <footer className="text-center text-small segment" style={{marginBottom: '0'}}>
+            Turing Signing Server Dashboard
+            <br/>
+            <a href={repository.url} target="_blank">Open Source</a>
         </footer>
     </>
 }
