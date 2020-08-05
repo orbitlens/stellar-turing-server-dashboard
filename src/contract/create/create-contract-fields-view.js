@@ -61,7 +61,7 @@ export default function CreateContractFieldsView({fields = [], onChange}) {
 
     function addNewField() {
         const newFields = fields.slice()
-        newFields.push({})
+        newFields.push({type: 'string'})
         onChange(newFields)
     }
 

@@ -3,10 +3,10 @@ import CodeHighlight from '../../components/code-highlight'
 import {useTurretInfo} from '../../turret/turret-hooks'
 import {navigate} from '../../util/nav'
 import isEqual from 'react-fast-compare'
+import UploadContractModel from '../../models/upload-contract'
 import CreateContractTurretsView from './create-contract-turrets-view'
 import CreateContractUploadFeeView from './create-contract-upload-fee-view'
 import CreateContractFieldsView from './create-contract-fields-view'
-import UploadContractModel from '../../models/upload-contract'
 import CreateContractAuthKeyView from './create-contract-authkey-view'
 
 
@@ -78,8 +78,10 @@ export default function CreateContractView() {
             {error}
         </div>}
         <div className="space row">
-            <div className="column column-50">
-                {inProgress&&<div className="loader micro"/>}
+            <div className="column column-50 text-left">
+                <div style={{display: 'inline-block'}}>
+                    {inProgress && <div className="loader micro"/>}
+                </div>
             </div>
             <div className="column column-25">
                 <button className="button button-block" disabled={!isValid || inProgress} onClick={() => upload()}>
