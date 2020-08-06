@@ -24,7 +24,7 @@ export default function TurretSelectorView() {
     const [url, setUrl] = useState(''),
         [error, setError] = useState(null)
     return <div>
-        <h2>Chose Turing Server</h2>
+        <h2>Choose Turing Server</h2>
         <label className="dimmed">
             <p>
             Provide an URL of the Turing server to explore
