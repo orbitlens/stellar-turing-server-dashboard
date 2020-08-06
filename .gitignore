@@ -23,5 +23,4 @@ node_modules/
 # Windows cache
 *Thumbs.db
 
-# Source map files
-*.js.map
+distr/
