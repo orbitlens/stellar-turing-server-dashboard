@@ -1,5 +1,4 @@
 const path = require('path'),
-    fs = require('fs'),
     pkgInfo = require('./package.json'),
     webpack = require('webpack'),
     autoprefixer = require('autoprefixer'),
@@ -18,7 +17,7 @@ module.exports = function (env, argv) {
     const settings = {
         mode,
         entry: {
-            'turing-dashboard': [path.join(__dirname, './src/app.js')]
+            'tss-dashboard': [path.join(__dirname, './src/app.js')]
         },
         output: {
             path: path.join(__dirname, './distr/'),
@@ -69,13 +68,8 @@ module.exports = function (env, argv) {
                             }
                         }
                     ]
-                },
-                {
-                    test: /\.svg$/,
-                    loader: 'svg-inline-loader'
                 }
-            ],
-            noParse: /\.wasm$/ // Makes WebPack think that we don't need to parse this module, otherwise it tries to recompile it, but fails - Error: Module not found: Error: Can't resolve 'env'
+            ]
         },
         plugins: [
             new webpack.IgnorePlugin(/ed25519/),
