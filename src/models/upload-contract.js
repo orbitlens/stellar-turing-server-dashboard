@@ -71,7 +71,7 @@ export default class UploadContractModel {
     upload() {
         const data = new FormData()
         data.append('contract', new Blob([this.code], {type: 'application/javascript'}))
-        data.append('turrets', this.turrets)
+        data.append('turrets', btoa(this.turrets))
         if (this.fields.length) {
             const encodedFields = btoa(JSON.stringify(this.fields))
             data.append('fields', encodedFields)
